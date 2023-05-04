@@ -1,0 +1,13 @@
+pipelines:
+  tags:
+    'test-*':
+        - step:
+            name: Sync GitHub Mirror
+            image: alpine/git:latest
+            clone:
+              enabled: false
+            script:
+              - git clone --bare git@bitbucket.org:i2tic/gauss_tag_gtm_event.git
+              - cd gauss_tag_gtm_event.git
+              - git remote add github-repo git@github.com:makingscience-andresvelasco/gauss_tag_gtm_event-alpha.git
+              - git push github-repo master:main
