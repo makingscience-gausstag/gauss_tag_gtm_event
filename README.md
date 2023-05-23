@@ -1,3 +1,6 @@
-# Gauss Tag Event
+# Gauss AI Event Tag
 
-This template allows sending the Gauss Tag events from Google Tag Manager.
+This template pushes an event to the Gauss platform, supporting AI Value Based Bidding and more.
+
+Visit [our site](https://www.makingscience.com/gauss/) for more information.
+
