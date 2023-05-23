@@ -18,7 +18,7 @@ ___INFO___
     "ANALYTICS",
     "ADVERTISING"
   ],
-  "description": "Push an upstream event to Gauss platform",
+  "description": "PUsh an event to the Gauss platform supporting AI Value Based Bidding and more. \n\nhttps://www.makingscience.com/gauss/",
   "containerContexts": [
     "WEB"
   ],
@@ -35,14 +35,6 @@ ___TEMPLATE_PARAMETERS___
 [
   {
     "type": "TEXT",
-    "name": "gaussId",
-    "displayName": "Gauss Tag Id",
-    "simpleValueType": true,
-    "canBeEmptyString": true,
-    "help": "You can leave it empty if you have not changed it in configuration step"
-  },
-  {
-    "type": "TEXT",
     "name": "category",
     "displayName": "Even Name",
     "simpleValueType": true,
@@ -51,6 +43,14 @@ ___TEMPLATE_PARAMETERS___
         "type": "NON_EMPTY"
       }
     ]
+  },
+  {
+    "type": "TEXT",
+    "name": "gaussId",
+    "displayName": "Gauss Tag Id",
+    "simpleValueType": true,
+    "canBeEmptyString": true,
+    "help": "(Advanced) Tag Identification used for dissambiguating concurrent tag access (do not use without customer support)"
   },
   {
     "type": "SIMPLE_TABLE",
